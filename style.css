@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-white{
+    color: white; 
+}
+
+body{
+    background-color: white;
+    height: 2000px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: black;
+    z-index: 1;
+}
+
+.nav > li > a{
+    color: white;
+}
+
+.nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0px 24px;
+}
+.nav li {
+    display: inline-block;
+    height: 60px;
+    position: relative;
+}
+
+.subnav li:hover a,
+.nav > li:hover > a {
+    background-color: #ccc;
+    color: black;
+}
+
+.subnav {
+    position: absolute;
+    list-style-type: none;
+    display: none;
+}
+
+.nav > li:hover .subnav{
+    display: block;
+    background: black;
+}
+
+.subnav > li > a{
+    width: 150px;  
+    color: white;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    line-height: 60px;
+    padding: 0 25px;
+    font-size: 20px;
+}
+
+.search-btn:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.slider{
+    margin-top: 60px;
+    padding-top: 50%;
+    background: url('ny.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    color: white;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-heading{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.text-content{
+    font-size: 15px;
+}
+
+.section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.sub-heading{
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: "Lato", sans-serif;
+}
+.about-text{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.member-list{
+    margin-top: 40px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.member-item{
+    float: left;
+    text-align: center;
+}
+
+.member-name{
+    font-size: 15px;
+}
+
+.member-item img{
+    margin-top: 10px;
+    width: 154px;
+    border-radius: 8px;
+}
+
+.tour-section{
+    background-color: black;
+    height: 800px;
+}
+
+.ticket-list{
+    background-color: white;
+    margin: 40px 350px;
+
+}
+
+.ticket-list li{
+    padding: 10px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sold-out{
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity{
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+.tour-place{
+    margin: 40px 342px;  
+}
+
+
+.place-item{
+    float: left;
+    width: 33.333%;
+    padding: 0px 8px;
+    
+}
+
+.place-item img{
+    width: 100%;
+    display: block;
+}
+
+.place-item img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.place-body{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.75;
+}
+
+.place-des{
+    margin-top: 15px;
+}
+
+.place-btn{
+    color: white;
+    background-color: black;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.place-btn:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-box{
+    background-color: white;
+    width: 600px;
+    height: 480px;
+}
+
+.modal-heading{
+    background-color: #009688;
+    height: 130px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-i  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+
+}
+
+.modal-i:hover{
+    background-color: #ccc;
+    color: #f44336;
+}
+
+.fa-suitcase{
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.modal-title{
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.modal-body{
+    padding: 0 16px;
+}
+
+.modal-text{
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    padding: 16px 0;
+}
+.modal-input{
+    width: 100%;
+    padding: 12px;
+}
+
+.modal-btn{
+    width: 100%;
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #009688;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal-btn:hover{
+    background-color: #ccc ;
+    color: black;
+}
+
+.modal-close{
+    padding: 8px;
+    margin-top: 16px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.modal-need{
+    margin-left: 410px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.contact{
+    height: 400px;
+    font-size: 20px;
+}
+
+.contact-content{
+    margin-top: 60px;
+}
+
+.contact i {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form{
+    padding: 6px;
+    width: 100%;
+}
+
+.form-submit{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.mt-8 {
+    margin-top: 8px; 
+}
+
+.end-section img{
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-list i{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
